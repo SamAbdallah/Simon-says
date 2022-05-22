@@ -78,6 +78,49 @@ window.onload=function () {
 
     }
 
+
+    function fade(ele) {
+        var main = ele.style.visibility;
+        ele.style.visibility = 'hidden';
+        setTimeout(function () {
+            ele.style.visibility = main;
+        }, 300);
+    }
+
+
+    function check(array1, array2) {
+
+        for (var i = 0; i < array1.length; i++) {
+            var stat = false
+            if (array1[i] == array2[i]) {
+                stat = true
+            } else {
+                stat = false
+                lost()
+            }
+
+        }
+        if (array1.length == array2.length && stat == true) {
+            setTimeout(function () {
+                game();
+            }, 1000)
+        }
+
+    }
+
+
+    function lost() {
+        lose.play();
+        level = 0;
+        document.getElementById("main").innerText = "Game Over...Press any key to restart"
+        PlayerChoice = []
+        store = []
+        document.removeEventListener("keypress", x)
+        document.addEventListener("keypress", game)
+
+
+    }
+
 }
 
 
