@@ -52,6 +52,32 @@ window.onload=function () {
 
     }
 
+    function playerClick() {
+        if (document.getElementById("red").addEventListener("click", () => {
+            red.play();
+            PlayerChoice.push("red")
+            check(PlayerChoice, store)
+
+        })) ;
+        else if (document.getElementById("yellow").addEventListener("click", () => {
+            yellow.play();
+            PlayerChoice.push("yellow")
+            check(PlayerChoice, store)
+        })) ;
+        else if (document.getElementById("blue").addEventListener("click", () => {
+            blue.play()
+            PlayerChoice.push("blue")
+            check(PlayerChoice, store)
+        })) ;
+        else if (document.getElementById("green").addEventListener("click", () => {
+            green.play();
+            PlayerChoice.push("green")
+            check(PlayerChoice, store)
+        })) ;
+
+
+    }
+
 }
 
 
