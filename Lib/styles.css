@@ -1,0 +1,81 @@
+.box{
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+    border: 5px solid black;
+}
+
+#main{
+    font-size: xxx-large;
+    color: navajowhite;
+    font-family: 'Minecraft', sans-serif;
+    margin-top: -100px;
+}
+
+
+
+#main2{
+    font-size: xxx-large;
+    color: navajowhite;
+    font-family: 'Minecraft', sans-serif;
+}
+
+
+.box:hover {
+
+    box-shadow: inset 0px 0px 0px 3px white;
+    box-sizing: border-box;
+}
+
+
+.hover2 {
+
+    box-shadow: inset 0px 0px 0px 30px black;
+    box-sizing: border-box;
+}
+
+.fade{
+    background-color: white;
+}
+
+
+
+#red{
+    background-color: red;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+
+#green{
+    background-color: green;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+
+#blue{
+    background-color: blue;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+
+#yellow{
+    background-color: yellow;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+
+
+body{
+    background-color: midnightblue;
+    text-align: center;
+    margin-top: 12.5%;
+}
